@@ -23,6 +23,8 @@ export default function Layout({ children }) {
       document.documentElement.classList.add('dark');
     } else if (lightMode) {
       document.documentElement.classList.remove('dark');
+    } else {
+      document.documentElement.classList.add('dark');
     }
     return;
   };
